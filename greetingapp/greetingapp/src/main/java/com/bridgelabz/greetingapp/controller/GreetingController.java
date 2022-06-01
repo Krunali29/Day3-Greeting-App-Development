@@ -43,6 +43,11 @@ public class GreetingController {
     public Greeting getElementById(@PathVariable Long id){
         return greetingService.getGreetingById(id);
     }
+//    /**
+//     * @Func :Ability To List All messages
+//     * @URL: http://localhost:8080/all
+//     * @Return: All elements in repository
+//     **/
     @GetMapping("/all")
     public List<Greeting> getAll(){
         return greetingService.getAll();
