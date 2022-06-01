@@ -52,6 +52,11 @@ public class GreetingController {
     public List<Greeting> getAll(){
         return greetingService.getAll();
     }
+//    /**
+//     * @Func :Ability To Edit Messages in Repository
+//     * @URL: http://localhost:8080/edit/2   for ed id:2
+//     * @Return: Edits position Id 2
+//     */
     @PutMapping("/edit/{id}")
     public Greeting editGreetingById(@PathVariable long id, @RequestParam String name){
         return greetingService.editGreetingById(id, name);
