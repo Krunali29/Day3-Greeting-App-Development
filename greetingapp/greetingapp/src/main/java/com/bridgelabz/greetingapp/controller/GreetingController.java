@@ -61,6 +61,11 @@ public class GreetingController {
     public Greeting editGreetingById(@PathVariable long id, @RequestParam String name){
         return greetingService.editGreetingById(id, name);
     }
+//    /**
+//     * @Func :Ability To Delete Messages in Repository
+//     * @URL: http://localhost:8080/delete/2   for ed id:2
+//     * @Return: Delete's position Id 2
+//     */
     @DeleteMapping("/delete/{id}")
     public List<Greeting> deleteGreetingById(@PathVariable Long id){
         return greetingService.deleteGreetingById(id);
