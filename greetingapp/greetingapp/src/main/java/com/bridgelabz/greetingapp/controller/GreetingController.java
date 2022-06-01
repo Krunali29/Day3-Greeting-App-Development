@@ -18,6 +18,11 @@ public class GreetingController {
     private IGreetingService greetingService;
 /**
 //     * @Func :Returning JSON Object
+// * @Param:Adding first name ,last name
+// * {
+// *     name=suraj in "params"-POSTMAN
+// *     lastname=Lole
+// * }
 //     * @URL: http://localhost:8080/home  -Postman-GET
 //     * @return: hello
      */
